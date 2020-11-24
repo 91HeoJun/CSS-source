@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .food-slide {
+        width: 800px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 10px;
+      }
+      .food-slide img {
+        float: left;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .controls a {
+        display: block;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        line-height: 50px;
+        text-align: center;
+      }
+
+      clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="food-slide">
+      <img src="../img/space_food.png" alt="" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. At dolore
+        placeat nesciunt eligendi illo perferendis repudiandae qui quia
+        veritatis obcaecati? Temporibus deserunt quae doloribus ducimus delectus
+        ex iste id minima?
+      </p>
+      <div class="controls clearfix">
+        <a href="" class="prev">Previous Project</a>
+        <a href="" class="next">next Project</a>
+      </div>
+    </div>
+  </body>
+</html>
