@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        font-family: gorgia, "Times New Roman", Times, serif;
+        color: #444;
+      }
+      .container {
+        display: flex;
+      }
+      .main-content {
+        background-color: gray;
+        display: flex;
+        margin: 10px;
+        width: 66%;
+      }
+      .main-content .panel {
+        background-color: white;
+        margin: 20px;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      .sidebar {
+        background-color: gray;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 33%;
+      }
+
+      .sidebar .panel {
+        max-height: 25%;
+        height: 25%;
+        background-color: white;
+        margin: 20px;
+        justify-content: center;
+      }
+      .sidebar .panel h3,
+      p {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>Main title</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed id
+            nihil ab laborum iste facilis dolores quia harum quidem. Et fugiat
+            corporis deserunt repellat eius, placeat incidunt repudiandae
+            delectus commodi?
+          </p>
+          <img src="http://placehold.it/200" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            voluptates veniam quam, exercitationem quibusdam aliquid, vel
+            officiis a harum saepe aut fuga temporibus maiores repudiandae
+            libero quia distinctio obcaecati optio.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            voluptates veniam quam, exercitationem quibusdam aliquid, vel
+            officiis a harum saepe aut fuga temporibus maiores repudiandae
+            libero quia distinctio obcaecati optio.
+          </p>
+          <h3>Sub title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            voluptates veniam quam, exercitationem quibusdam aliquid, vel
+            officiis a harum saepe aut fuga temporibus maiores repudiandae
+            libero quia distinctio obcaecati optio.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            voluptates veniam quam, exercitationem quibusdam aliquid, vel
+            officiis a harum saepe aut fuga temporibus maiores repudiandae
+            libero quia distinctio obcaecati optio.
+          </p>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus hic,
+            vel voluptates consequatur at aspernatur corrupti earum repellendus
+            minus non magni perferendis quos, quia, exercitationem quis eos
+            quisquam alias sit!
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus hic,
+            vel voluptates consequatur at aspernatur
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            exercitationem quis eos quisquam alias sit!
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

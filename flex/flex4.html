@@ -7,29 +7,20 @@
     <style>
       .container {
         display: flex;
-        /* flex-direction: row-reverse; direction = 방향(column, column-reverse, row(기본값), row-reverse) */
-        flex-wrap: wrap-reverse; /*wrap = 줄바꿈*/
+        flex-direction: row; /*column, column-reverse, row(기본값), row-reverse*/
+        border: 1px solid;
+        justify-content: center;
+        /*flex-start(기본값) / space-evenly, flex-end, center, space-between, space-around*/
       }
       .container div {
-        width: 200px;
+        width: 100px;
         height: 100px;
-        border: 4px dashed;
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
       .container div:first-child {
         background-color: red;
       }
       .container div:nth-child(2) {
         background-color: midnightblue;
-      }
-      .container div:nth-child(3) {
-        background-color: gray;
-      }
-      .container div:nth-child(4) {
-        background-color: skyblue;
       }
       .container div:last-child {
         background-color: yellow;
@@ -38,11 +29,9 @@
   </head>
   <body>
     <div class="container">
-      <div>flex-A</div>
-      <div>flex-B</div>
-      <div>flex-C</div>
-      <div>flex-D</div>
-      <div>flex-E</div>
+      <div>flex-item</div>
+      <div>flex-item</div>
+      <div>flex-item</div>
     </div>
   </body>
 </html>

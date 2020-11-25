@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial;
+      }
+      .main-nav {
+        border: 2px solid black;
+        padding: 1.618rem;
+        background-color: midnightblue;
+      }
+      .main-nav .menu {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+      }
+      .main-nav .menu a {
+        display: flex;
+        align-content: space-around;
+        text-decoration: none;
+        color: mintcream;
+      }
+      .main-nav .menu h4,
+      p {
+        margin-left: 6px;
+      }
+      .menu p {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <ul class="menu">
+        <li class="menu-home">
+          <a href="">
+            <i class="fa fa-home"></i>
+            <div class="menu-text">
+              <h4>HOME</h4>
+              <p>Start Here</p>
+            </div>
+          </a>
+        </li>
+        <li class="menu-products">
+          <a href="">
+            <i class="fa fa-shopping-basket"></i>
+            <div class="menu-text">
+              <h4>PRODUCTS</h4>
+              <p>Shop Now</p>
+            </div>
+          </a>
+        </li>
+        <li class="menu-blog">
+          <a href="">
+            <i class="fa fa-pencil"></i>
+            <div class="menu-text">
+              <h4>BLOG</h4>
+              <p>My Thoughts</p>
+            </div>
+          </a>
+        </li>
+        <li class="menu-contact">
+          <a href="">
+            <i class="fa fa-phone"></i>
+            <div class="menu-text">
+              <h4>CONTACT</h4>
+              <p>Get in Touch</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background-color: midnightblue;
+      }
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        background-color: white;
+        width: 60%;
+        padding: 1.618rem;
+        order: 2;
+      }
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 1.618rem;
+      }
+      .flexbg .left {
+        order: 1;
+        background-color: black;
+        color: blanchedalmond;
+      }
+      .flexbg .right {
+        order: 3;
+        background-color: brown;
+        color: burlywood;
+      }
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+
+        .flexbg .right {
+          order: 3;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor velit
+          voluptatum quos quisquam consequatur. Dolor sint labore voluptatum
+          dignissimos non consectetur praesentium iusto in veniam amet eum,
+          autem repellat officia! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Architecto suscipit voluptas ducimus ad omnis, iste
+          ipsa earum voluptate incidunt aperiam minima quia rem quis non
+          similique ullam iure officiis cupiditate.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor velit
+          voluptatum quos quisquam consequatur. Dolor sint labore voluptatum
+          dignissimos non consectetur praesentium iusto in veniam amet eum,
+          autem repellat officia! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Dignissimos eius ea natus consequuntur sint
+          doloremque temporibus, illum tempore laboriosam. Et inventore unde
+          architecto similique enim dignissimos vitae distinctio officia a.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>autem repellat officia!</p>
+      </aside>
+    </div>
+  </body>
+</html>

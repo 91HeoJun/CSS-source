@@ -7,32 +7,33 @@
     <style>
       .container {
         display: flex;
-        /* flex-direction: row-reverse; direction = 방향(column, column-reverse, row(기본값), row-reverse) */
-        flex-wrap: wrap-reverse; /*wrap = 줄바꿈*/
+        border: 4px solid;
       }
       .container div {
-        width: 200px;
+        width: 100px;
         height: 100px;
-        border: 4px dashed;
-        font-size: 40px;
+        border: 4px dashed red;
+        font-size: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-      .container div:first-child {
-        background-color: red;
-      }
-      .container div:nth-child(2) {
         background-color: midnightblue;
       }
+      .container div:first-child {
+        order: 1;
+      }
+
+      /* .container div:nth-child(2) {
+        background-color: midnightblue; */
+      }
       .container div:nth-child(3) {
-        background-color: gray;
+        order: 1;
       }
-      .container div:nth-child(4) {
+      /* .container div:nth-child(4) {
         background-color: skyblue;
-      }
+      } */
       .container div:last-child {
-        background-color: yellow;
+        order:-1;
       }
     </style>
   </head>
